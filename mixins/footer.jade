@@ -2,10 +2,23 @@ mixin footer()
   footer.footer
     .container
       .row.hidden-sm.hidden-xs
+        .col-md-4.col-md-offset-1
+          .footer__right
+            p
+              | Sie haben eine Frage? Kontaktieren Sie uns. Wir freuen
+              | uns auf Sie!
+            p
+              | pigWOLF
+              br
+              | Gustav-Maerz-Straße 8
+              br
+              | 88400 Biberach
+              br
+              | E: info@pigwolf.com
         .col-md-5
-          h2.footer__teaser.uppercase.text-white.text-right.text-bold
+          h2.footer__teaser.uppercase.text-white.text-bold
             | LASSEN SIE UNS GEMEINSAM IHRE ZIELE ÜBERTREFFEN
       .row
         .col-md-6.col-md-offset-3.text-center
           p.footer__copyright
-            | All rights reserved. Pigwolf © 2015
+            | All rights reserved. pigWOLF © #{new Date().getFullYear()}
