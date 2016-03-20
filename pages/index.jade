@@ -5,26 +5,70 @@ include /mixins/icon_card
 
 block body
   +frontdoor()
-    .row
-      .col-md-4
-        +icon-card({ icon: 'fa fa-thumbs-up' })
-          h3 Kunden finden
-          p Sie sind ständig auf der Suche nach neuen Kunden?
-          a.btn.btn-primary(href='//board.pigwolf.com/offers/new?intention=1')
-            i.fa.fa-thumbs-up
-            |  Ja
-      .col-md-4
-        +icon-card({ icon: 'fa fa-users' })
-          h3 Bewerber finden
-          p
-            | Sie brauchen qualifizierte Arbeitskräfte für Ihr Unternehmen?
-          a.btn.btn-primary(href='//board.pigwolf.com/offers/new?intention=2')
-            i.fa.fa-thumbs-up
-            |  Ja
-      .col-md-4
-        +icon-card({ icon: 'fa fa-bolt' })
-          h3 Kundeninteraktion
-          p Sie möchten besser mit ihrem Kundenstamm kommunizieren?
-          a.btn.btn-primary(href='//board.pigwolf.com/offers/new?intention=3')
-            i.fa.fa-thumbs-up
-            |  Ja
+    .container
+      .row
+        .col-md-4
+          +icon-card({ icon: 'fa fa-thumbs-up' })
+            h3 Kunden finden
+            p Sie sind ständig auf der Suche nach neuen Kunden?
+            a.btn.btn-primary(href='//board.pigwolf.com/offers/new?intention=1')
+              i.fa.fa-thumbs-up
+              |  Ja
+        .col-md-4
+          +icon-card({ icon: 'fa fa-users' })
+            h3 Bewerber finden
+            p
+              | Sie brauchen qualifizierte Arbeitskräfte für Ihr Unternehmen?
+            a.btn.btn-primary(href='//board.pigwolf.com/offers/new?intention=2')
+              i.fa.fa-thumbs-up
+              |  Ja
+        .col-md-4
+          +icon-card({ icon: 'fa fa-bolt' })
+            h3 Kundeninteraktion
+            p Sie möchten besser mit ihrem Kundenstamm kommunizieren?
+            a.btn.btn-primary(href='//board.pigwolf.com/offers/new?intention=3')
+              i.fa.fa-thumbs-up
+              |  Ja
+    section.banner
+      .container
+        p
+          | Was früher der Marktplatz für den Händler war, ist heute das Internet. Für ein 
+          | modernes Unternehmen bietet das Internet unendlich viele Möglichkeiten. Es gibt Ihnen 
+          | die Chance, jeden Menschen gezielt und unabhängig von seinem Standort zu erreichen.
+    .container.margin-top
+      .frontdoor-carousel.carousel(data-ride='carousel')
+        .frontdoor-carousel__background
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='.carousel', data-slide-to='0')
+          li(data-target='.carousel', data-slide-to='1')
+          li(data-target='.carousel', data-slide-to='2')
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          .item.active
+            .slide
+              | Warum auf diesem Weg nicht
+              br
+              | neue Zielgruppen erreichen und zusätzliche 
+              | Geschäftsfelder erschließen? 
+            .carousel-caption
+          .item
+            .slide
+              | Warum auf diesem Weg nicht
+              br
+              | gezielt junge, qualifizierte und motivierte Mitarbeiter 
+              | finden?
+            .carousel-caption
+          .item
+            .slide
+              | Warum auf diesem Weg nicht
+              br
+              | Menschen von der eigenen Marke begeistern?
+            .carousel-caption
+        // Controls
+        a.left.carousel-control(href='.carousel', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+          span.sr-only Previous
+        a.right.carousel-control(href='.carousel', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+          span.sr-only Next

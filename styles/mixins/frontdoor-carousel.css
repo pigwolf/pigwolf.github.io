@@ -1,0 +1,13 @@
+.frontdoor-carousel {
+  background-image: url(/images/road.jpg);
+  background-size: cover;
+  background-position-y: -255px;
+}
+
+.frontdoor-carousel__background {
+  background-color: black;
+  opacity: 0.55;
+  position: absolute;
+  height: 390px;
+  width: 100%;
+}
