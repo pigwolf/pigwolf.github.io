@@ -25,7 +25,7 @@ block body
         .col-md-4
           +icon-card({ icon: 'fa fa-bolt' })
             h3 Kundeninteraktion
-            p Sie möchten besser mit ihrem Kundenstamm kommunizieren?
+            p Sie möchten besser mit Ihrem Kundenstamm kommunizieren?
             a.btn.btn-primary(href='//board.pigwolf.com/offers/new?intention=3')
               i.fa.fa-thumbs-up
               |  Ja
@@ -35,6 +35,8 @@ block body
           | Was früher der Marktplatz für den Händler war, ist heute das Internet. Für ein 
           | modernes Unternehmen bietet das Internet unendlich viele Möglichkeiten. Es gibt Ihnen 
           | die Chance, jeden Menschen gezielt und unabhängig von seinem Standort zu erreichen.
+        br
+        a.btn.btn-lg.btn-primary.btn-thick(href="//board.pigwolf.com") Legen Sie los!
     .container.margin-top
       .frontdoor-carousel.carousel(data-ride='carousel')
         .frontdoor-carousel__background
@@ -73,9 +75,9 @@ block body
           span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
           span.sr-only Next
 
-    section.banner.banner--white
+    section#marketing.banner.banner--white
       .container
-        h1#marketing.page-header MARKETING
+        h1.page-header MARKETING
         p
           | Wir helfen Ihnen, von den Vorteilen des Online-Marketings zu profitieren und Ihr 
           | Unternehmen im Umfeld des modernen E-Commerce voranzubringen. Nur ein aktiver
@@ -101,3 +103,25 @@ block body
           i  Big Thinking Marketings
           |  aus, um Ihre Zielgruppe überlegt anzusprechen und das
           | gesamte Potential Ihres Unternehmens zu entfalten.
+
+    section.banner
+      .container
+        p Intelligent wachsen mit pigWOLF.
+        a.btn.btn-lg.btn-primary.btn-thick(href="//board.pigwolf.com") Wachsen Sie mit!
+
+    section#team.banner.banner--white
+      .container
+        h1.page-header TEAM
+        .row
+          .col-md-8
+            p
+              | Unser Team besteht aus Experten der Bereiche Vertrieb, Marketing, Technologiemanagement,
+              | Social Network Analysis, Künstliche Intelligenz, Informatik und Controlling. Dadurch ist
+              | eine ganzheitliche Betrachtung Ihres Unternehmens sichergestellt.
+            
+            p
+              | Wir entwickeln Strategien und Systeme, die optimal an Ihre Mitarbeiter und Ihre
+              | Unternehmenswerte angepasst sind. Für uns ist ein gesundes Wachstum Ihres Unternehmens
+              | der wichtigste Maßstab.
+          .col-md-4
+            img.img-responsive.img-rounded.img-thumbnail(src='/images/team.jpg')

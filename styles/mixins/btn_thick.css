@@ -1,0 +1,14 @@
+.btn-thick {
+  background-color: transparent;
+  background-image: none;
+  border-color: white;
+  border-radius: 0;
+  padding: 12px 23px;
+  border-width: 2px;
+}
+
+.btn-thick:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
