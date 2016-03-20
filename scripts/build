@@ -4,6 +4,3 @@ set -e
 
 export NODE_PATH=.
 make
-find styles -name '*.css' | xargs cat > bundle.css
-cleancss -o bundle.min.css bundle.css
-mv bundle.{min.css,css}

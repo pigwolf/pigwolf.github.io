@@ -11,5 +11,3 @@ const template = jade.compileFile(`pages/${file}.jade`, {
   pretty: true,
 });
 fs.writeFileSync(`${file}.html`, template(page.data));
-
-console.log(`Page ${file} successfully rendered!`);

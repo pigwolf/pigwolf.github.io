@@ -7,5 +7,4 @@ trap 'kill $(jobs -p)' EXIT
 
 # Spin up development tools
 watch-run -i -p 'layouts/**,mixins/**,pages/**' make &
-catw 'styles/**/*.css' -o bundle.css -v &
 node-dev server.js
