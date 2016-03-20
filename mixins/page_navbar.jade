@@ -1,6 +1,6 @@
 mixin navbar()
   nav.page-navbar.navbar.navbar-default
-    .container-fluid
+    .container
       // Brand and toggle get grouped for better mobile display
       .navbar-header
         button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar-collapse')
@@ -16,11 +16,16 @@ mixin navbar()
         ul.nav.navbar-nav.page-navbar__nav
           li
             a(href='/') Home
+          li
+            a(href='/#marketing') Marketing
+          li
+            a(href='/#contact') Kontakt
           //- li
           //-   a(href='#') Marketing
           //- li
           //-   a(href='#') Referenzen
           //- li
           //-   a(href='#') Team
+        ul.nav.navbar-nav.navbar-right
           li
-            a(href='//board.pigwolf.com') Kontakt
+            a(href='//board.pigwolf.com') Interesse?
