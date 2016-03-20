@@ -10,3 +10,10 @@
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
+
+.banner--white {
+  background-color: white;
+  color: #13181d;
+  padding: 25px 0;
+  text-align: left;
+}
