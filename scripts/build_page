@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const jade = require('jade');
+
+const pages = require('pages');
+const file = process.argv[2];
+const page = pages[file] || { locals: {} };
+const template = jade.compileFile(`pages/${file}.jade`, {
+  basedir: process.env.NODE_PATH,
+  pretty: true,
+});
+fs.writeFileSync(`${file}.html`, template(page.data));
+
+console.log(`Page ${file} successfully rendered!`);

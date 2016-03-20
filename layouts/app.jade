@@ -1,0 +1,30 @@
+include /mixins/footer
+
+doctype html
+head
+  title pigboard
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='icon', type='image/png', href='https://s3-eu-west-1.amazonaws.com/web-designio/website-pigwolf/ico/favicon-196x196.png', sizes='196x196')
+  link(rel='icon', type='image/png', href='https://s3-eu-west-1.amazonaws.com/web-designio/website-pigwolf/ico/favicon-96x96.png', sizes='96x96')
+  link(rel='icon', type='image/png', href='https://s3-eu-west-1.amazonaws.com/web-designio/website-pigwolf/ico/favicon-32x32.png', sizes='32x32')
+  link(rel='icon', type='image/png', href='https://s3-eu-west-1.amazonaws.com/web-designio/website-pigwolf/ico/favicon-16x16.png', sizes='16x16')
+  link(rel='icon', type='image/png', href='https://s3-eu-west-1.amazonaws.com/web-designio/website-pigwolf/ico/favicon-128.png', sizes='128x128')
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+  link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/bootstrap/css/bootstrap-theme.min.css')
+  link(href='//fonts.googleapis.com/css?family=Droid+Serif', rel='stylesheet', type='text/css')
+  link(href='//fonts.googleapis.com/css?family=Open+Sans:600,400,300', rel='stylesheet', type='text/css')
+  link(rel='stylesheet', href='/bundle.css')
+.app
+  header.app__header
+    .app__background
+    .app__logo-container
+      a(href='/')
+        img.app__logo(src='/images/logo-dark.png')
+    h1.page-header.app__title
+      | Beratung und Dienstleistung
+  .app__body.container
+    block body
+  +footer
