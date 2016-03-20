@@ -1,29 +1,30 @@
 extends /layouts/app
 
+include /mixins/frontdoor
 include /mixins/icon_card
 
 block body
-  .frontdoor
-    .jumbotron
-      h2 Sie wissen was Sie wollen!
-      p
-        | Erfolg. Geben Sie uns einen kleinen Einblick in Ihre Interessen
-        | und wir zeigen Ihnen, wie Sie Ihre Geschäfte moderner und effizienter gestalten.
+  +frontdoor()
     .row
       .col-md-4
-        a.no-text-decoration(href='/offers/new?intention=1')
-          +icon-card({ icon: 'fa fa-thumbs-up' })
-            h3 Kunden finden
-            p Ihr Hauptinteresse ist es neue Kunden anzusprechen und zu gewinnen
+        +icon-card({ icon: 'fa fa-thumbs-up' })
+          h3 Kunden finden
+          p Sie sind ständig auf der Suche nach neuen Kunden?
+          a.btn.btn-primary(href='//board.pigwolf.com/offers/new?intention=1')
+            i.fa.fa-thumbs-up
+            |  Ja
       .col-md-4
-        a.no-text-decoration(href='/offers/new?intention=2')
-          +icon-card({ icon: 'fa fa-users' })
-            h3 Bewerber finden
-            p
-              | Ihr Hauptinteresse ist es neue qualifizierte Arbeitskräfte für Ihr Unternehmen zu
-              | gewinnen
+        +icon-card({ icon: 'fa fa-users' })
+          h3 Bewerber finden
+          p
+            | Sie brauchen qualifizierte Arbeitskräfte für Ihr Unternehmen?
+          a.btn.btn-primary(href='//board.pigwolf.com/offers/new?intention=2')
+            i.fa.fa-thumbs-up
+            |  Ja
       .col-md-4
-        a.no-text-decoration(href='/offers/new?intention=3')
-          +icon-card({ icon: 'fa fa-bolt' })
-            h3 Kundeninteraktion
-            p Ihr Hauptinteresse ist es mit Ihren Kunden zu interagieren
+        +icon-card({ icon: 'fa fa-bolt' })
+          h3 Kundeninteraktion
+          p Sie möchten besser mit ihrem Kundenstamm kommunizieren?
+          a.btn.btn-primary(href='//board.pigwolf.com/offers/new?intention=3')
+            i.fa.fa-thumbs-up
+            |  Ja

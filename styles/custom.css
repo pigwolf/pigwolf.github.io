@@ -1,5 +1,6 @@
 h1, h2, h3 {
-  font-family: "Droid serif";
+  font-family: 'Droid Serif', serif;
+  -webkit-font-smoothing: antialiased;
   color: #13181d;
 }
 

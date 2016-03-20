@@ -2,7 +2,7 @@ include /mixins/footer
 
 doctype html
 head
-  title pigboard
+  title pigWOLF | intelligentes Wachstum
   meta(charset='utf-8')
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -14,17 +14,9 @@ head
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
   link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
   link(rel='stylesheet', href='/bootstrap/css/bootstrap-theme.min.css')
-  link(href='//fonts.googleapis.com/css?family=Droid+Serif', rel='stylesheet', type='text/css')
-  link(href='//fonts.googleapis.com/css?family=Open+Sans:600,400,300', rel='stylesheet', type='text/css')
+  link(href='//fonts.googleapis.com/css?family=Open+Sans:600,400,300,200', rel='stylesheet', type='text/css')
+  link(href='//fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css')
   link(rel='stylesheet', href='/bundle.css')
 .app
-  header.app__header
-    .app__background
-    .app__logo-container
-      a(href='/')
-        img.app__logo(src='/images/logo-dark.png')
-    h1.page-header.app__title
-      | Beratung und Dienstleistung
-  .app__body.container
-    block body
+  block body
   +footer

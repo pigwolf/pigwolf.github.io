@@ -6,5 +6,5 @@ export NODE_PATH=.
 trap 'kill $(jobs -p)' EXIT
 
 # Spin up development tools
-watch-run -i -p 'layouts/**,mixins/**,pages/**' make &
+watch-run -i -p 'layouts/**,mixins/**,pages/**,styles/**' make &
 node-dev server.js
