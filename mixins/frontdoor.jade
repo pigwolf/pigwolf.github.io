@@ -1,10 +1,13 @@
+include page_navbar
+
 mixin frontdoor()
   .frontdoor
+    +navbar()
     header.frontdoor__header
       .frontdoor__background
-      .frontdoor__logo-container
-        a(href='/')
-          img.frontdoor__logo(src='/images/logo-dark.png')
+      //- .frontdoor__logo-container
+      //-   a(href='/')
+      //-     img.frontdoor__logo(src='/images/logo-dark.png')
       h1.page-header.frontdoor__title
         | Pigwolf bietet Ihnen die richtige Strategie
         | für intelligentes Wachstum!

@@ -8,3 +8,18 @@ body {
   color: #13181d;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.nav>li>a {
+  line-height: 27px;
+  font-size: 21px;
+  font-family: 'Droid serif', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #B3B3B3;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: white;
+}
