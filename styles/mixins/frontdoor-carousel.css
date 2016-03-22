@@ -1,7 +1,7 @@
 .frontdoor-carousel {
   background-image: url(/images/road.jpg);
   background-size: cover;
-  background-position-y: -255px;
+  background-position: bottom;
 }
 
 .frontdoor-carousel__background {
