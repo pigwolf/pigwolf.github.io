@@ -21,4 +21,8 @@ head
   block body
   script(src='//code.jquery.com/jquery-2.2.2.min.js')
   script(src='/bootstrap/js/bootstrap.min.js')
+  script.
+    $('.page-navbar__nav a').click(function() {
+      $('#navbar-collapse').collapse('hide');
+    });
   +footer

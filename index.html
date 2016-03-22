@@ -39,12 +39,23 @@
         </div>
       </div>
     </nav>
-    <header class="frontdoor__header">
+    <header class="frontdoor__header visible-md">
       <div class="frontdoor__background"></div>
       <h1 class="page-header frontdoor__title">
         Pigwolf bietet Ihnen die richtige Strategie
         für intelligentes Wachstum!<br/>
       </h1>
+    </header>
+    <header class="frontdoor__mobile-header hidden-md">
+      <div class="container">
+        <div class="jumbotron">
+          <h2>Herzlich willkommen</h2>
+          <p>
+            Pigwolf bietet Ihnen die richtige Strategie
+            für intelligentes Wachstum!
+          </p>
+        </div>
+      </div>
     </header>
     <div class="container">
       <div class="row">
@@ -86,7 +97,7 @@
         </p><br><a href="//board.pigwolf.com" class="btn btn-lg btn-primary btn-thick">Legen Sie los!</a>
       </div>
     </section>
-    <div class="container margin-top">
+    <div class="container margin-top hidden-sm hidden-xs">
       <div data-ride="carousel" class="frontdoor-carousel carousel">
         <div class="frontdoor-carousel__background"></div>
         <!-- Indicators-->
@@ -169,6 +180,11 @@
   </div>
   <script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
   <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    $('.page-navbar__nav a').click(function() {
+      $('#navbar-collapse').collapse('hide');
+    });
+  </script>
   <footer id="contact" class="footer">
     <div class="container">
       <div class="row hidden-sm hidden-xs">

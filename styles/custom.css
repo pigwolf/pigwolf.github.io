@@ -27,3 +27,8 @@ body {
 .navbar-brand {
   padding: 0;
 }
+
+.navbar-default .navbar-collapse {
+  border: none;
+  background-color: #13181D;
+}

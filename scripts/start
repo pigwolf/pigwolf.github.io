@@ -2,9 +2,6 @@
 
 export NODE_PATH=.
 
-# Cleanup on exit
-trap 'kill $(jobs -p)' EXIT
-
 # Spin up development tools
 watch-run -i -p 'layouts/**,mixins/**,pages/**,styles/**' make &
 node-dev server.js
