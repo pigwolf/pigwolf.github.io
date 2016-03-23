@@ -21,4 +21,9 @@ mixin footer()
       .row
         .col-md-6.col-md-offset-3.text-center
           p.footer__copyright
-            | All rights reserved. pigWOLF © #{new Date().getFullYear()}
+            | All rights reserved. pigWOLF © #{new Date().getFullYear()} |&nbsp;
+            a.footer__link(href='/privacy.html') Datenschutz
+            |  |&nbsp;
+            a.footer__link(href='/impressum.html') Impressum
+            |  |&nbsp;
+            a.footer__link(href='/disclaimer.html') Haftungsausschluss
