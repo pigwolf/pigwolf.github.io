@@ -1,14 +1,32 @@
-.btn-thick {
+.btn-flat {
   background-color: transparent;
   background-image: none;
-  border-color: white;
   border-radius: 0;
-  padding: 12px 23px;
   border-width: 2px;
 }
 
-.btn-thick:hover {
+.btn-flat--black {
+  border-color: black;
+  color: black;
+}
+
+.btn-flat--black:hover, .btn-flat--black:active, .btn-flat--black:focus {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.btn-flat--white {
+  border-color: white;
+  color: white;
+}
+
+.btn-flat--white:hover, .btn-flat--white:active, .btn-flat--white:focus {
   background-color: white;
   color: black;
   border-color: white;
+}
+
+.btn-flat--thick {
+  padding: 12px 23px;
 }

@@ -16,6 +16,7 @@
 }
 
 .banner--white {
+  font-family: 'Open sans', sans-serif;
   background-color: white;
   color: #13181d;
   padding: 25px 0;
