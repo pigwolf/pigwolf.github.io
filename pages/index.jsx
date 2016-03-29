@@ -15,7 +15,7 @@ export default function IndexPage() {
                 <h3>Kunden finden</h3>
                 <p>Sie sind ständig auf der Suche nach neuen Kunden?</p>
                 <a
-                  href="//board.pigwolf.com/offers/new?intention=1"
+                  href="//board.pigwolf.com/#/offers/new?intention=1"
                   className="btn btn-flat btn-flat--black"
                 >
                   <i className="fa fa-thumbs-up" /> Ja
@@ -27,7 +27,7 @@ export default function IndexPage() {
                 <h3>Bewerber finden</h3>
                 <p>Sie brauchen qualifizierte Arbeitskräfte für Ihr Unternehmen?</p>
                 <a
-                  href="//board.pigwolf.com/offers/new?intention=2"
+                  href="//board.pigwolf.com/#/offers/new?intention=2"
                   className="btn btn-flat btn-flat--black"
                 >
                   <i className="fa fa-thumbs-up" /> Ja
@@ -39,7 +39,7 @@ export default function IndexPage() {
                 <h3>Kundeninteraktion</h3>
                 <p>Sie möchten besser mit Ihrem Kundenstamm kommunizieren?</p>
                 <a
-                  href="//board.pigwolf.com/offers/new?intention=3"
+                  href="//board.pigwolf.com/#/offers/new?intention=3"
                   className="btn btn-flat btn-flat--black"
                 >
                   <i className="fa fa-thumbs-up" /> Ja
