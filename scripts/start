@@ -3,5 +3,5 @@
 export NODE_PATH=.
 
 # Spin up development tools
-watch-run -i -p 'layouts/**,mixins/**,pages/**,styles/**' make &
+watch-run -i -p 'layouts/**,components/**,pages/**,styles/**' make &
 node-dev server.js

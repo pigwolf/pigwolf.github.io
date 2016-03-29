@@ -1,5 +1,3 @@
-include /mixins/footer
-
 doctype html
 head
   title pigWOLF | intelligentes Wachstum
@@ -24,12 +22,11 @@ head
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-75614915-1', 'auto');
     ga('send', 'pageview');
-.app
-  block body
+body
+  != body
   script(src='//code.jquery.com/jquery-2.2.2.min.js')
   script(src='/bootstrap/js/bootstrap.min.js')
   script.
     $('.page-navbar__nav a').click(function() {
       $('#navbar-collapse').collapse('hide');
     });
-  +footer

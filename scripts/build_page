@@ -1,13 +1,23 @@
 #!/usr/bin/env node
 
+'use strict';
+
 const fs = require('fs');
 const jade = require('jade');
+const ReactDOM = require('react-dom/server');
+const React = require('react');
 
-const pages = require('pages');
-const file = process.argv[2];
-const page = pages[file] || { locals: {} };
-const template = jade.compileFile(`pages/${file}.jade`, {
-  basedir: process.env.NODE_PATH,
-  pretty: true,
-});
-fs.writeFileSync(`${file}.html`, template(page.data));
+require('babel-register');
+
+main(process.argv[2]);
+
+function main(page) {
+  const Page = require(`../pages/${page}.jsx`).default;
+  const body = ReactDOM.renderToStaticMarkup(React.createElement(Page));
+  const layout = 'app';
+  const template = jade.compileFile(`layouts/${layout}.jade`, {
+    basedir: process.cwd(),
+    pretty: false,
+  });
+  fs.writeFileSync(`${page}.html`, template({ body }));
+}

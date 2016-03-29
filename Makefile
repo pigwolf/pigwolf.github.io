@@ -1,10 +1,10 @@
-MIXINS=$(wildcard mixins/*)
+COMPONENTS=$(wildcard components/*)
 LAYOUTS=$(wildcard layouts/*)
 PAGES=$(wildcard pages/*)
 CSS=$(wildcard styles/*.css) $(wildcard styles/**/*)
-FILES=$(PAGES:pages/%.jade=%.html)
+FILES=$(PAGES:pages/%.jsx=%.html)
 
-%.html: pages/%.jade $(MIXINS) $(LAYOUTS)
+%.html: pages/%.jsx $(COMPONENTS) $(LAYOUTS)
 	@scripts/build_page $*
 	@echo "built $@"
 
