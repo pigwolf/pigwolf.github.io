@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-export default function PageNavbar() {
+function activeClass(props, page) {
+  return props.page === page ? 'active' : '';
+}
+
+export default function PageNavbar(props) {
   return (
     <nav className="page-navbar navbar navbar-default">
       <div className="container">
@@ -26,10 +30,21 @@ export default function PageNavbar() {
         </div>
         <div id="navbar-collapse" className="collapse navbar-collapse">
           <ul className="nav navbar-nav page-navbar__nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/#marketing">Marketing</a></li>
-            <li><a href="/#team">Team</a></li>
-            <li><a href="/#contact">Kontakt</a></li>
+            <li className={activeClass(props, 'index')}>
+              <a href="/">Home</a>
+            </li>
+            <li className={activeClass(props, 'marketing')}>
+              <a href="/marketing.html">Marketing</a>
+            </li>
+            <li className={activeClass(props, 'recruiting')}>
+              <a href="/recruiting.html">Recruiting</a>
+            </li>
+            <li className={activeClass(props, 'team')}>
+              <a href="/#team">Team</a>
+            </li>
+            <li className={activeClass(props, 'contact')}>
+              <a href="/#contact">Kontakt</a>
+            </li>
           </ul>
           <ul className="nav navbar-nav navbar-right">
             <li>
@@ -41,3 +56,7 @@ export default function PageNavbar() {
     </nav>
   );
 }
+
+PageNavbar.propTypes = {
+  page: PropTypes.string.isRequired,
+};

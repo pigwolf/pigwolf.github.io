@@ -12,11 +12,24 @@
 }
 
 .frontdoor__background {
-  opacity: 0.55;
   height: 100%;
-  background-image: url(/images/background_2_copy.jpg);
-  background-position-y: -150px;
   background-size: cover;
+}
+
+.frontdoor__background--variant-1 {
+  opacity: 0.55;
+  background-position-y: -150px;
+  background-image: url(/images/background_2_copy.jpg);
+}
+
+.frontdoor__background--variant-2 {
+  opacity: 0.55;
+  background-image: url(/images/bag-and-hands.jpg);
+}
+
+.frontdoor__background--variant-3 {
+  opacity: 0.70;
+  background-image: url(/images/bulb.jpg);
 }
 
 .frontdoor__title {

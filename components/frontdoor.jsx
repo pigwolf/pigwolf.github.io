@@ -1,17 +1,22 @@
 import React, { PropTypes } from 'react';
+import classNames from 'classnames';
 
 import PageNavbar from './page_navbar';
 
 export default function Frontdoor(props) {
   return (
     <div className="frontdoor">
-      <PageNavbar />
+      <PageNavbar page={props.page} />
       <header className="frontdoor__header visible-md visible-lg">
-        <div className="frontdoor__background" />
+        <div
+          className={classNames('frontdoor__background', {
+            'frontdoor__background--variant-1': props.variant === '1',
+            'frontdoor__background--variant-2': props.variant === '2',
+            'frontdoor__background--variant-3': props.variant === '3',
+          })}
+        />
         <h1 className="page-header frontdoor__title">
-          Pigwolf bietet Ihnen die richtige Strategie
-          für intelligentes Wachstum!
-          <br />
+          {props.children}
         </h1>
       </header>
       <header className="frontdoor__mobile-header hidden-md hidden-lg">
@@ -19,17 +24,21 @@ export default function Frontdoor(props) {
           <div className="jumbotron">
             <h2>Herzlich willkommen</h2>
             <p>
-              Pigwolf bietet Ihnen die richtige Strategie
-              für intelligentes Wachstum!
+              {props.children}
             </p>
           </div>
         </div>
       </header>
-      {props.children}
     </div>
   );
 }
 
 Frontdoor.propTypes = {
-  children: PropTypes.any.isRequired,
+  page: PropTypes.string.isRequired,
+  variant: PropTypes.string.isRequired,
+  children: PropTypes.any,
+};
+
+Frontdoor.defaultProps = {
+  variant: '1',
 };

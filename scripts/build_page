@@ -13,7 +13,7 @@ main(process.argv[2]);
 
 function main(page) {
   const Page = require(`../pages/${page}.jsx`).default;
-  const body = ReactDOM.renderToStaticMarkup(React.createElement(Page));
+  const body = ReactDOM.renderToStaticMarkup(React.createElement(Page, { page }));
   const layout = 'app';
   const template = jade.compileFile(`layouts/${layout}.jade`, {
     basedir: process.cwd(),
