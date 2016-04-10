@@ -1,4 +1,4 @@
-.banner {
+.section {
   font-size: 21px;
   font-weight: 200;
   background-color: #13181d;
@@ -11,11 +11,11 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.banner--thin {
+.section--thin {
   padding: 9px 0 0;
 }
 
-.banner--white {
+.section--white {
   font-family: 'Open sans', sans-serif;
   background-color: white;
   color: #13181d;
